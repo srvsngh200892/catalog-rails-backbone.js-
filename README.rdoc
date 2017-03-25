@@ -1,28 +1,31 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== INSTRUCTION
 
-Things you may want to cover:
+Things you need to know for this application :
 
-* Ruby version
+* ruby version 2.2.5
+  rvm use ruby-2.2.5
 
-* System dependencies
+* rails version 4.2.4
 
-* Configuration
+* run specs use command
+  rspec spec
+  * run models specs use command
+    rspec spec/models
+  * run controllers specs use command
+    rspec spec/controllers
+* api end points
+   * GET /api/v1/products  (Give you list of all products with detail)
+   
+   * GET /api/v1/products/:id  (Give you particular product detail)
+   
+   * POST /api/v1/products (will create product)
+     * required params (name, price, description)
+   
+   * PUT /api/v1/products/:id (will update particular product)
+     * request params ({ description: "product is available", name:"product1", price:200} )
+    
+   * DELETE /api/v1/products/:id (will delete particular product)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+   
