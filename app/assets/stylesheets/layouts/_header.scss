@@ -16,21 +16,14 @@ header#header{
     li{
       display:inline;
       margin-left:25px;
-      color: darken(#ececec, 30%);
+      color: #a01010;
 
       a{
-        font-size: 14px;
+        font-size: 28px;
         color: darken(#ececec, 30%);
         text-decoration:none;
         padding: 3px 10px 4px;
         border: 1px solid transparent;
-      }
-
-      a:hover{
-        background:#666;
-        color: #ececec;
-        @include box-shadow(none);
-        @include border-radius(2px);
       }
     }
   }
