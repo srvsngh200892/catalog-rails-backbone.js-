@@ -1,0 +1,12 @@
+!!!5
+%html
+  = render partial: 'layouts/head'
+  %body
+    #loading{ style: 'display:none;' }
+    #container
+      %header#header.clearfix= render partial: 'layouts/header'
+      #main.clearfix
+        #flashes
+        .content= yield
+    = render partial: 'layouts/javascripts'
+

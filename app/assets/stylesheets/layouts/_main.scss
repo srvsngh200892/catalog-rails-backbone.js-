@@ -1,0 +1,15 @@
+html {
+  background-color: #FFFFFF;
+}
+
+#main{
+  @include background-image(url("download.png"));
+
+  .content{
+    position: relative;
+    width: flex-grid(12);
+    float:left;
+    margin-left: flex-grid(1);
+  }
+}
+
