@@ -2,7 +2,7 @@ development:
   adapter: postgresql
   encoding: utf8
   database: product
-  username: flock
+  username:
   password:
   host: localhost
 
@@ -10,6 +10,6 @@ test:
   adapter: postgresql
   encoding: utf8
   database: product_test
-  username: flock
+  username:
   password:
   host: localhost
