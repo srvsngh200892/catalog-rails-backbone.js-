@@ -32,6 +32,7 @@ gem 'letters'
 gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 gem 'turbolinks'
 gem 'therubyracer', platforms: :ruby
+gem 'kaminari-bootstrap', '~> 3.0.1'
 
 
 group :development, :test do

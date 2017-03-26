@@ -54,7 +54,6 @@ class Api::V1::ApiController < ApplicationController
   rescue Exception => e
     Rails.logger.error("Unhandled API Error: #{e.to_s}.  Backtrace:\n#{e.backtrace.join("\n")}")
     Rails.logger.info("Unhandled API Error: #{e.to_s}.  Request: #{request.body.read} \n Backtrace:\n#{e.backtrace.join("\n")}")
-    Appsignal.send_exception(e, source: 'BENEFIT_REWAMP')
     render_api_error(02 , 500, 'server', "API internal error: #{e.to_s}")
   end
 end

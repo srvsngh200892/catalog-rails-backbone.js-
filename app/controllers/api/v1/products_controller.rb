@@ -3,7 +3,7 @@ class Api::V1::ProductsController < Api::V1::ApiController
 
   # Get /api/v1/products
   def index
-    @products = Product.all
+    @products = Product.page(params[:page] ? params[:page] : 1)
     render json: @products,
             each_serializer: Api::V1::ProductsSerializer,
             status: :ok
